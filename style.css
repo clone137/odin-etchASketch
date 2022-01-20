@@ -11,11 +11,11 @@
 }
 
 .gridItem {
-  padding: 1px;
-  border: 1px solid #444;
+  /* padding: 1px; */
+  border: 1px solid #000;
   text-align: center;
 }
 
 .orange {
-  background-color: #000;
+  background-color: orangered;
 }
