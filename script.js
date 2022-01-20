@@ -18,7 +18,7 @@ function handleClearButton() {
   }
   let sideLength;
   do {
-    sideLength = Number(prompt('how many columns/rows? (1-100)'));
+    sideLength = Number(prompt('how many columns/rows? (1-100)', 16));
   } while (sideLength < 1 || sideLength > 100);
   drawGrid(sideLength);
 }
