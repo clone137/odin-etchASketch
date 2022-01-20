@@ -5,8 +5,14 @@ let boardSize = 512;
 const clearButton = document.querySelector('.clearButton');
 clearButton.addEventListener('click', handleClearButton);
 
+const randomNumber = (max) => Math.trunc(Math.random() * max);
+
+const randomRGB = () =>
+  `rgba(${randomNumber(255)},${randomNumber(255)},${randomNumber(255)},50)`;
+
 function handleMouseover(e) {
-  e.target.classList.add('orange');
+  // e.target.classList.add('orange');    // CSS
+  e.target.style.backgroundColor = randomRGB();
 }
 
 function handleClearButton() {
