@@ -1,0 +1,21 @@
+:root {
+  --gridSize: 1;
+  --cellSize: 1;
+}
+
+#container {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-rows: repeat(var(--gridSize), var(--cellSize));
+  grid-template-columns: repeat(var(--gridSize), var(--cellSize));
+}
+
+.gridItem {
+  padding: 1px;
+  border: 1px solid #444;
+  text-align: center;
+}
+
+.orange {
+  background-color: #000;
+}
